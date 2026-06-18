@@ -1,7 +1,7 @@
 {
   "name": "tag-tint",
   "displayName": "Tag Tint",
-  "description": "Tints each HTML line by its tag name, so an opening tag and its matching closing tag share a line color. Built for tracking where blocks start and end.",
+  "description": "Tints HTML and CSS lines by structure, so an opening tag/brace and its matching closer share a line color and nesting shades darker. Built for tracking where blocks start and end.",
   "version": "0.1.0",
   "publisher": "reef",
   "engines": {
@@ -11,7 +11,10 @@
     "Visualization"
   ],
   "activationEvents": [
-    "onLanguage:html"
+    "onLanguage:html",
+    "onLanguage:css",
+    "onLanguage:scss",
+    "onLanguage:less"
   ],
   "main": "./extension.js",
   "contributes": {

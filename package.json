@@ -17,6 +17,10 @@
     "onLanguage:less"
   ],
   "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gwbootes/vsc-highlighter.git"
+  },
   "contributes": {
     "configuration": {
       "title": "Tag Tint",

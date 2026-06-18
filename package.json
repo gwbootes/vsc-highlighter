@@ -1,0 +1,31 @@
+{
+  "name": "tag-tint",
+  "displayName": "Tag Tint",
+  "description": "Tints each HTML line by its tag name, so an opening tag and its matching closing tag share a line color. Built for tracking where blocks start and end.",
+  "version": "0.1.0",
+  "publisher": "reef",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Visualization"
+  ],
+  "activationEvents": [
+    "onLanguage:html"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Tag Tint",
+      "properties": {
+        "tagTint.opacity": {
+          "type": "number",
+          "default": 0.12,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "How strong the line tint is (0 = invisible, 1 = solid). Light backgrounds usually want a low value."
+        }
+      }
+    }
+  }
+}
